@@ -1,21 +1,32 @@
 // Common styles of the project
 
+/***
+   STICKY FOOTER
+***/
+
 html, body
     height 100%
+    box-sizing border-box
 
+*, *:before, *:after
+    box-sizing inherit
 
 .page
     display flex
     flex-direction column
 
 .page__wrapper
-    // min-height 100%
-    // margin-bottom -50px
     flex 1 0 auto
 .page__footer
     flex 0 0 auto
     height 50px
-    background-color red
 
-* html .page__wrapper
-    height 100%
+/***
+    CONTAINER STYLE
+***/
+
+.container
+    min-width 320px
+    max-width 1024px
+    width 100%
+    margin 0 auto
