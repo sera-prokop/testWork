@@ -1,16 +1,50 @@
 .aside__block
-  width 300px
-  background-color colorGray
-  position absolute
-  height 100%
-  opacity 0.5;
-  display flex
-  align-items center
-  justify-content center
-  z-index -1
-  &--left
-    left calc(50% - 512px)
-    //animation 1s leftToRight forwards
-  &--right
-    right calc(50% - 512px)
-    //animation 1s rightToLeft forwards
+    position relative
+    border 1px solid colorBlue
+    padding 10px
+    margin 5px 0
+    @media (min-width 768px)
+        width 300px
+        background-color colorGray
+        position absolute
+        margin 0
+        height 100%
+        opacity 0.5;
+        display flex
+        align-items center
+        justify-content center
+        z-index -1
+        top 0
+        &--left
+            left 20px
+            @media (min-width 1064px)
+                left calc(50% - 512px)
+        &--right
+            right 20px
+            @media (min-width 1064px)
+                right calc(50% - 512px)
+
+
+/***
+    ANIMATION CLASS STYLE
+***/
+
+.anim-ltr
+    animation 1s leftRight forwards
+    @media (min-width 1700px)
+        animation 0.5s toLeft forwards
+
+.back-ltr
+    animation 1s backLeftRight forwards
+    @media (min-width 1700px)
+        animation 0.5s backToLeft forwards
+
+.anim-rtl
+    animation 1s rightLeft forwards
+    @media (min-width 1700px)
+        animation 0.5s toRight forwards
+
+.back-rtl
+    animation 1s backRightLeft forwards
+    @media (min-width 1700px)
+        animation 0.5s backToRight forwards

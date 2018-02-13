@@ -1,31 +1,109 @@
 // GUI stylies of the project
 // For example, styles of the links, buttons and so on.
 
-@keyframes leftToRight
-  from
-    transform translateX(0px)
-    z-index -1
 
-  50%
-    transform translateX(-300px)
-    z-index -1
+/***
+    LEFT BUTTON KEYFRAMES
+***/
+@keyframes leftRight
+    from
+        transform translateX(0px)
+        z-index -1
 
-  100%
-    transform translateX(0px)
-    z-index 10
+    50%
+        transform translateX(-300px)
+        z-index -1
 
-
-@keyframes rightToLeft
-  from
-    transform translateX(0px)
-    z-index -1
-
-  50%
-    transform translateX(300px)
-    z-index -1
-
-  100%
-    transform translateX(0px)
-    z-index 10
+    100%
+        transform translateX(0px)
+        z-index 10
 
 
+@keyframes backLeftRight
+    from
+        transform translateX(0px)
+        z-index 10
+
+    50%
+        transform translateX(-300px)
+        z-index -1
+
+    100%
+        transform translateX(0px)
+        z-index -1
+
+
+@keyframes toLeft
+    from
+        transform translateX(0px)
+        z-index -1
+
+    99%
+        z-index -1
+
+    100%
+        transform translateX(-300px)
+        z-index 10
+
+
+@keyframes backToLeft
+    from
+        transform translateX(-300px)
+
+    100%
+        transform translateX(0px)
+        z-index -1
+
+
+/***
+    RIGHT BUTTON KEYFRAMES
+***/
+
+@keyframes rightLeft
+    from
+        transform translateX(0px)
+        z-index -1
+
+    50%
+        transform translateX(300px)
+        z-index -1
+
+    100%
+        transform translateX(0px)
+        z-index 10
+
+
+@keyframes backRightLeft
+    from
+        transform translateX(0px)
+        z-index 10
+
+    50%
+        transform translateX(300px)
+        z-index -1
+
+    100%
+        transform translateX(0px)
+        z-index -1
+
+
+@keyframes toRight
+    from
+        transform translateX(0px)
+        z-index -1
+
+    99%
+        z-index -1
+
+    100%
+        transform translateX(300px)
+        z-index 10
+
+
+@keyframes backToRight
+    from
+        transform translateX(300px)
+
+    100%
+        transform translateX(0px)
+        z-index -1

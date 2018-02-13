@@ -1,24 +1,30 @@
 .header__menu
-  border 1px solid colorGray
-  padding: 5px
+    border 1px solid colorGray
+    padding 5px
+    background-color bg
 
 /***
   MENU STYLE
 ***/
 
 .menu
-  display flex
-  justify-content space-between
+    display flex
+    justify-content space-between
+    min-height 40px
 
 .menu__link
-  display inline-block
-  padding 4px 10px
-  color colorLink
-  font-weight 700
-  border 1px solid colorLink
-  text-decoration none
-  border-radius 5px
-  transition tr
-  &:hover
-    background-color colorLink
-    color white
+    display none
+    @media (min-width 768px)
+        display inline-block
+        padding 4px 10px
+        color colorLink
+        font-weight 700
+        border 1px solid colorLink
+        text-decoration none
+        border-radius 5px
+        transition tr
+        position relative
+        z-index 20
+        &:hover
+            background-color colorLink
+            color white
