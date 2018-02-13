@@ -1,7 +1,6 @@
 mixin header(data)
-    header.header
-        .container
-            nav.header__menu.menu
-                each item in data.list
-                    a(href="javascript:;").menu__link=item
+    header.header.container
+        nav.header__menu.menu
+            each item in data.list
+                a(href="javascript:;").menu__link=item
 
