@@ -4,6 +4,7 @@ html(class="no-js", lang="ru")
     include ../components/head/head.pug
     include ../components/header/header.pug
     include ../components/content/content.pug
+    include ../components/aside/aside.pug
     include ../components/footer/footer.pug
 
     head
@@ -16,6 +17,7 @@ html(class="no-js", lang="ru")
             //- Include your components here
             +header(header)
             +content(content)
+            +aside(aside)
 
         .page__footer
             +footer()
