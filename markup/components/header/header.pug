@@ -2,5 +2,5 @@ mixin header(data)
     header.header.container
         nav.header__menu.menu
             each item in data.list
-                a(href="javascript:;").menu__link=item
+                a(href="javascript:;" class="menu__link js-" + item.nameClass)=item.name
 

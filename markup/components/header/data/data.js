@@ -1,4 +1,13 @@
 var data = {header: {
-    list: ['Open left sidebar', 'Open right sidebar']
+    list: [
+        {
+            name: 'Open left sidebar',
+            nameClass: 'ltr'
+        },
+        {
+            name: 'Open right sidebar',
+            nameClass: 'rtl'
+        }
+    ]
     }
 };

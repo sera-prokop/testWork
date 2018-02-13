@@ -1,10 +1,3 @@
-.aside
-  position absolute
-  left 50%
-  transform translateX(-50%)
-  height 100%
-  top 0
-  z-index 10
 .aside__block
   width 300px
   background-color colorGray
@@ -14,7 +7,10 @@
   display flex
   align-items center
   justify-content center
+  z-index -1
   &--left
-    left 20px
+    left calc(50% - 512px)
+    //animation 1s leftToRight forwards
   &--right
-    right 20px
+    right calc(50% - 512px)
+    //animation 1s rightToLeft forwards
